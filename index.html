@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-
 <head>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
 </head>
 
 <body>
+
     <h1>Pig Dice Game!</h1>
 
-    <div class="gameUserForm">
-        <form id="pigdiceUserForm">
-            <label for="pigDicePlayer1">player one, enter your name:</label>
-            <input id="pigDicePlayer1" type="text" name="pigDicePlayer1">
+    <form id="gameUserForm">
+        <h2>click the button to start a new game!</h2>
+        <button type="submit">clicky</button>
+    </form>
 
-            <label for="pigDicePlayer2">player two, enter your name:</label>
-            <input id="pigDicePlayer2" type="text" name="pigDicePlayer2">
-
-            <button type="submit">clicky</button>
-        </form>
+    <div class="hidden" id="border1">
+        <div class="div1">
+            <h3>Player one is: <span id="Name1"></span></h3>
+            <p>You rolled a <span id="roll1"></span>!</p>
+            <p>Your total score is <span id="score1"></span>!</p>
+            <button type="button" id="button1">Roll</button>
+        </div>
     </div>
-
-
+    <div class="hidden" id="border2">
+        <div class="div2">
+            <h3>Player two is: <span id="Name2"></span></h3>
+            <p>You rolled a <span id="roll2"></span>!</p>
+            <p>Your total score is <span id="score2"></span>!</p>
+            <button type="button" id="button2">Roll</button>
+        </div>
+    </div>
+    <div class="totalScore">
+        <p>Player one total score: <span id="total1"></span></p>
+        <p>Player two total score: <span id="total2"></span></p>
+    </div>
 </body>
 
 </html>
