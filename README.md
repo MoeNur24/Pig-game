@@ -1,9 +1,16 @@
-describe: diceNumberRandomizer
+```
+Descride: diceNumberRandomizer();
 
-Test: it generates a random number between 1 and 6
+Test: "It generates a random number between  1 and 6"
 Code: diceNumberRandomizer(6);
-Expected output: true
+Expected Output: true
 
-describe diceRollContainer
+Descride: diceRollContainer
 
-Test: it collects randomized numbers outputted from diceNumberRandomizer() and puts them into an array
+Test: "It creates an empty array and adds  randomized number to it"
+Code: const result = diceRollContainer();
+console.log(result);
+Expected Output: true
+
+
+```
